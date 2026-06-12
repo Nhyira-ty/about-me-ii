@@ -2,11 +2,11 @@
 
 :root {
   --background: #2b2b36;
-  --foreground: #160d0d;
-  --card-surface: #ffffff;
-  --card-nested: #f0f0f2;
-  --card-border: #e4e4e7;
-  --card-hover: #e8e8eb;
+  --foreground: #a15656;
+  --card-surface: #dfa2a2;
+  --card-nested: #454597;
+  --card-border: #1f1f9b;
+  --card-hover: #2a2aa8;
   --card-highlight: rgba(0, 0, 0, 0.04);
   --muted: #4d4dc0;
   --text-secondary: #52525b;
@@ -18,7 +18,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --background: #000000;
+    --background: #a12424;
     --foreground: #ffffff;
     --card-surface: #111111;
     --card-nested: #1a1a1a;
@@ -35,7 +35,7 @@
 }
 
 :root[data-theme="light"] {
-  --background: #f5f5f7;
+  --background: #1e1e25;
   --foreground: #111111;
   --card-surface: #ffffff;
   --card-nested: #f0f0f2;
@@ -51,9 +51,9 @@
 }
 
 :root[data-theme="dark"] {
-  --background: #000000;
+  --background: #8d4d4d;
   --foreground: #ffffff;
-  --card-surface: #111111;
+  --card-surface: #4d3d3d;
   --card-nested: #1a1a1a;
   --card-border: #2a2a2a;
   --card-hover: #222222;
@@ -120,8 +120,8 @@ a {
   background-size: 22px 22px;
   mask-image: linear-gradient(
     to bottom,
-    #000 0%,
-    #000 35%,
+    #755050 0%,
+    #1a1111 35%,
     rgb(0 0 0 / 0.45) 65%,
     transparent 100%
   );
@@ -184,7 +184,7 @@ a {
 
 :root:not([data-theme="dark"]) .theme-toggle .icon-moon,
 :root[data-theme="light"] .theme-toggle .icon-moon {
-  display: none;
+  display: block;
 }
 
 @media (prefers-color-scheme: dark) {
